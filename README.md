@@ -1,6 +1,6 @@
 # Overview
 
-Test the tooling and processes SED team is using to deploy application in an OpenStack region to Azure. This test will bake, test, deploy and form a [Consul](https://consul.io) cluster in Azure.
+Test the tooling and processes my team is using to deploy application in an OpenStack region to Azure. This test will bake, test, deploy and form a [Consul](https://consul.io) cluster in Azure.
 
 ## Dependencies
 
