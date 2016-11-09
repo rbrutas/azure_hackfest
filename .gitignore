@@ -1,0 +1,3 @@
+*.tfstate*
+.git
+infra/consul/ansible/roles

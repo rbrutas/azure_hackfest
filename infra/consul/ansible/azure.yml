@@ -1,0 +1,24 @@
+---
+- hosts: all
+  become: yes
+
+  vars:
+    - consul_encrypt_key: "iYz2jsp1nR8imflZoJGWbw=="
+    - consul_acl_master_token: "83f9f9a2-76d9-406c-bb72-160dcf573789"
+    - consul_acl_datacenter: "eastus"
+    - consul_datacenter: "eastus"
+  roles:
+    - role: consul
+      consul_version: 0.7.0
+      consul_is_server: true
+      consul_dynamic_bind: true
+      consul_home:: "/mnt/consul"
+      consul_log_file: "/var/log/consul.log"
+      consul_bootstrap_expect: 3
+      consul_acl_default_policy: "deny"
+      consul_acl_ttl: "5m"
+      consul_acl_down_policy: "extend-cache"
+      consul_client_address_bind: true
+      consul_install_dnsmasq: true
+      consul_leave_on_terminate: true
+      consul_node_name: ""
