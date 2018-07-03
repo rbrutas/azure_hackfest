@@ -3,8 +3,8 @@
   become: yes
 
   vars:
-    - consul_encrypt_key: "iYz2jsp1nR8imflZoJGWbw=="
-    - consul_acl_master_token: "83f9f9a2-76d9-406c-bb72-160dcf573789"
+    - consul_encrypt_key: "**"
+    - consul_acl_master_token: "**"
     - consul_acl_datacenter: "eastus"
     - consul_datacenter: "eastus"
   roles:
